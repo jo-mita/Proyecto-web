@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(beach-1751455_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/* ===== FOTO SOBRE MI ===== */
+
+#Sobre-mi .sobre-contenido{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.foto-sobre-mi{
+    width: 140px;        /* tamaño pequeño */
+    height: auto;
+    border-radius: 18px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.7);
+    border: 3px solid rgba(255,255,255,0.7);
+    margin-top: 10px;
+}
+
+.texto-sobre-mi{
+    flex: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    #Sobre-mi .sobre-contenido{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foto-sobre-mi{
+        width: 120px;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* CAPA OSCURA ELEGANTE */
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.25)
+    );
+    z-index: -1;
+}
+
+/* TITULOS */
+h1 {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.8);
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    margin-top: 20px;
+    color: #ffd369;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+h3 {
+    text-align: center;
+    margin: 15px 0;
+    color: #f5f5f5;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(135deg,
+        rgba(5, 5, 5, 0.9),
+        rgba(255, 87, 34, 0.9)
+    );
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 65px 18px rgba(0,0,0,0.45);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* CONTENEDOR ENLACES */
+.enlaces{
+     padding: 10px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 70%;
+     gap: 30px;
+}
+
+/* BOTONES */
+.enlaces a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    background: linear-gradient(135deg, #ff9800,#ff5722);
+    border-radius: 80px;
+    transition: all 0.40s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.45);
+    position: relative;
+    overflow: hidden;
+}
+
+/* SECCION SOBRE MI */
+#Sobre-mi {
+    background: rgba(0,0,0,0.6);
+    margin: 140px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    scroll-margin-top: 120px; /*  */
+}
+
+    
+#Sobre-mi h3 {
+    font-size: 1.2rem;
+}
+
+
+
+
+#sobre-mi p {
+   text-align: justify;
+
+}
+
+
+
+/* SECCION #Hobbies */ 
+#Hobbies {
+    background: rgba(0,0,0,0.6);
+    margin: 150px auto;
+    padding: 30px;   
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(7, 7, 7, 0.5);
+    scroll-margin-top: 120px; /*  */
+}
+    
+#Hobbies h3 {
+    font-size: 1.2rem;
+}
+
+
+#Hobbies img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+#Hobbies p {
+   text-align: justify;
+
+}
+
+
+/* SECCION #contactos */
+#Contactos {
+    background: rgba(0,0,0,0.6);
+    margin: 140px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    scroll-margin-top: 120px; /*  */
+}
+    
+#Contactos h3 {
+    font-size: 1.2rem;
+}
+
+
+#Contactos img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+#Contactos p {
+   text-align: justify;
+
+}
+/* FORMULARIO CONTACTOS */
+.form-contacto {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-contacto label {
+    font-weight: bold;
+    color: #ffd369;
+}
+
+.form-contacto input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.form-contacto input:focus {
+    box-shadow: 0 0 8px rgba(255, 211, 105, 0.8);
+}
+
+.form-contacto button {
+    margin-top: 10px;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff9800,#ff5722);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-contacto button:hover {
+    background: linear-gradient(135deg, #ffd369, #ff9800);
+    color: #000;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/* SECCION #Horarios */
+#Horarios {
+    background: rgba(0,0,0,0.6);
+    margin: 140px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    scroll-margin-top: 120px;
+}
+
+#Horarios h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ffd369;
+    margin-bottom: 20px;
+}
+
+/* TABLA */
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.tabla-horarios th {
+    background: linear-gradient(135deg,#ff9800 #ff5722);
+    color: #fff;
+    padding: 12px;
+}
+
+.tabla-horarios td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.tabla-horarios tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tabla-horarios tr:hover {
+    background: rgba(255, 211, 105, 0.2);
+    transition: 0.3s;
+}
+
+ 
+
+/* EFECTO BRILLO */
+.enlaces a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.5),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.enlaces a:hover::before{
+    left: 100%;
+}
+
+footer{
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg,
+        rgb(255, 136, 1),
+        rgb(254, 78, 39)
+    );
+    text-align: center;
+    color: #fff;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 -6px 20px rgba(0,0,0,0.5);
+}
+
+footer p{
+    margin: 8px 0;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Línea decorativa arriba */
+footer::before{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, #ff9800,#ff5722);;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+
+/* HOVER */
+.enlaces a:hover {
+    transform: translateY(-6px) scale(1.05);
+    background: linear-gradient(135deg, #ff9800,#ff5722);
+    color: #000;
+}
+
